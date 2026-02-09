@@ -1,0 +1,15 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #181a20;
+  color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
