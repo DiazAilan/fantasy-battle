@@ -15,7 +15,7 @@ services:
     autoDeploy: true
     rootDir: backend
 
-  - type: static
+  - type: web
     name: fantasy-battle-frontend
     env: static
     plan: free
