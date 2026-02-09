@@ -14,3 +14,15 @@ services:
         sync: false # Set this in the Render dashboard for security
     autoDeploy: true
     rootDir: backend
+
+  - type: static
+    name: fantasy-battle-frontend
+    env: static
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://fantasy-battle-backend.onrender.com/api # Replace with your actual backend URL after deploy
+    autoDeploy: true
+    rootDir: frontend
